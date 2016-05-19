@@ -11,15 +11,17 @@
 ## Install
 
 ```sh
-npm i -D scrape-mdn
+npm i -S scrape-mdn
 ```
 
 ## Usage
 
 ```js
 import scrapeMdn from "scrape-mdn"
-
-scrapeMdn() // true
+scrapeMdn.search('array.map').then((results) => {
+  var {url, title, description} = results[0];
+  console.log(url);
+});
 ```
 
 ## License
