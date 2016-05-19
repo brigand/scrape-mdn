@@ -1,6 +1,6 @@
 {
   "name": "scrape-mdn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "extract data from the mozilla developer network",
   "main": "dist/index.js",
   "files": [
