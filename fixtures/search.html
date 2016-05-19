@@ -1,0 +1,1046 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="redesign no-js"  data-ffo-opensanslight=true data-ffo-opensans=true >
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+
+
+
+
+
+  <title>
+
+    Search Results for &#34;array.map&#34; | MDN
+
+</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <link rel="home" href="/en-US/">
+  <link rel="copyright" href="#copyright">
+
+
+
+    <link href="https://developer.cdn.mozilla.net/static/build/styles/mdn.593f20d8c365.css" rel="stylesheet" type="text/css" />
+
+
+      <link href="https://developer.cdn.mozilla.net/static/build/styles/search.3c6782b84b7c.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  <!-- common social tags -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+  <meta property="og:site_name" content="Mozilla Developer Network">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+  <meta name="twitter:site" content="@MozDevNet">
+  <meta name="twitter:creator" content="@MozDevNet">
+
+  <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network">
+
+  <!-- third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png">
+  <!-- iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png">
+  <!-- first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png">
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+  <!-- basic favicon -->
+
+
+
+  <link rel="shortcut icon" href="https://developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png">
+  <!--[if IE]>
+  <meta http-equiv="imagetoolbar" content="no">
+  <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
+  <![endif]-->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-36116321-5', 'mozilla.org');
+    ga('set', 'anonymizeIp', true);
+
+
+
+    // dimension9 == "Section editing"
+
+
+    (function() {
+        // http://cfsimplicity.com/61/removing-analytics-clutter-from-campaign-urls
+        var win = window;
+        var removeUtms = function(){
+            var location = win.location;
+            if (location.href.indexOf('utm') != -1 && win.history.replaceState) {
+                win.history.replaceState({}, '', location.pathname);
+            }
+        };
+
+        ga('send', 'pageview', {'hitCallback': removeUtms});
+    })();
+</script>
+
+
+</head>
+<body  class="search-results search-results-no-demo search-navigator-flush">
+
+  <script type="text/javascript">
+    (function(win) {
+        'use strict';
+
+
+            (function(){
+  var FLAGS = {
+    'compat_api': false,'kumaediting': false,'page_move': false,'registration_disabled': false,'search_suggestions': false,'section_edit': false,'spam_admin_override': false,'spam_checks_enabled': true,'spam_spammer_override': false,'spam_submissions_enabled': false,'spam_testing_mode': false,'wiki_samples': true,'wiki_spam_exempted': false,'wiki_spam_training': false
+    },
+    SWITCHES = {
+    'wiki_error_on_delete': false,'wiki_force_immediate_rendering': false,'enable_optimizely': false,'welcome_email': true,'application_ACAO': true,'store_revision_ips': true,'dumb_doc_urls': true
+    },
+    SAMPLES = {
+
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = '/static/js/libs/ckeditor/build/ckeditor/';
+
+        // This represents the site configuration
+        win.mdn = {
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to static assets (images, CSS, JS) in MDN
+            staticPath: 'https://developer.cdn.mozilla.net/static/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+
+            notifications: [],
+
+            // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/en-US/docs/get-documents'
+            },
+            // Assets that need to be dynamically injected
+            assets: {
+                css: {
+                    'editor-content': ['https://developer.cdn.mozilla.net/static/build/styles/editor-content.3d79df72080d.css',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/styles/wiki-compat-tables.f3a3bfce97a1.css',]
+                },
+                js: {
+                    'syntax-prism': ['https://developer.cdn.mozilla.net/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['https://developer.cdn.mozilla.net/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
+        };
+    })(this);
+</script>
+
+
+  <div class="global-notice">
+    <div class="wrap center">
+
+        <p><bdi>Mozilla wants to hear from developers like you. <a href="http://www.surveygizmo.com/s3/2737536/440b74c45e94?a=mdn">http://www.surveygizmo.com/s3/2737536/440b74c45e94?a=mdn</a></bdi></p>
+
+    </div>
+  </div>
+
+
+  <ul id="nav-access">
+    <li><a href="#content" id="skip-main">Skip to main content</a></li>
+    <li><a id="skip-language" href="#language">Select language</a></li>
+
+      <li><a href="#q" id="skip-search">Skip to search</a></li>
+
+  </ul>
+
+  <!-- Header -->
+  <header id="main-header"><div class="center">
+
+    <div id="tabzilla">
+        <a href="//www.mozilla.org/" class="no-track">mozilla</a>
+    </div>
+
+    <div class="clear header-clear"></div>
+
+
+    <a href="/en-US/" class="logo">Mozilla Developer Network</a>
+
+
+    <div id="nav-sec">
+
+                  <ul>
+                  <li>
+
+
+
+    <form>
+      <div class="oauth-login-container">
+          <div class="oauth-login-options" tabIndex="0">
+              <span class="oauth-login-options-text">
+                Sign in
+              </span>
+              <span class="oauth-icon oauth-github" data-service="GitHub" data-href="/users/github/login/?next=%2Fen-US%2Fsearch%3Fq%3Darray.map%26topic%3Dhtml%26topic%3Dcss%26topic%3Djs%26topic%3Dapi" title="GitHub"><i class="icon-github" aria-hidden="true"></i></span>
+              <span class="oauth-icon oauth-persona launch-persona-login wait-for-persona disabled" data-service="Persona" data-next="/en-US/search?q=array.map&amp;topic=html&amp;topic=css&amp;topic=js&amp;topic=api" title="Persona"><i class="icon-user" aria-hidden="true"></i></span>
+          </div>
+          <div class="oauth-login-picker" aria-hidden="true">
+              <ul>
+                  <li class="wait-for-persona disabled"><a href="/en-US/users/signin" class="login-link launch-persona-login" data-next="/en-US/search?q=array.map&amp;topic=html&amp;topic=css&amp;topic=js&amp;topic=api" data-service="Persona"><i class="icon-user" aria-hidden="true"></i>Persona</a></li>
+                  <li><a href="/users/github/login/?next=%2Fen-US%2Fsearch%3Fq%3Darray.map%26topic%3Dhtml%26topic%3Dcss%26topic%3Djs%26topic%3Dapi" class="login-link" data-service="GitHub"><i class="icon-github" aria-hidden="true"></i>GitHub</a></li>
+              </ul>
+
+          </div>
+      </div>
+    </form>
+</li>
+                </ul>
+
+    </div>
+
+    <nav id="main-nav" role="navigation"><ul><li><a href="/en-US/docs/Web">Web Platform<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu submenu-cols-2 js-submenu" id="nav-platform-submenu">
+          <div class="submenu-column">
+            <div class="title">Technologies</div>
+            <ul>
+              <li><a href="/en-US/docs/Web/HTML">HTML</a></li>
+              <li><a href="/en-US/docs/Web/CSS">CSS</a></li>
+              <li><a href="/en-US/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="/en-US/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="/en-US/docs/Web/Apps">Apps</a></li>
+              <li><a href="/en-US/docs/Web/MathML">MathML</a></li>
+            </ul>
+          </div><div class="submenu-column last">
+            <div class="title">References & Guides</div>
+            <ul>
+              <li><a href="/en-US/docs/Learn">Learn the Web</a></li>
+              <li><a href="/en-US/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="/en-US/docs/Web/Reference">References</a></li>
+              <li><a href="/en-US/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="/en-US/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="/en-US/docs/Web">...more docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="/en-US/docs/Zones">Mozilla Docs<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-zones-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="/en-US/docs/Mozilla/Firefox">Firefox</a></li>
+              <li><a href="/en-US/docs/Mozilla/Marketplace">Firefox Marketplace</a></li>
+              <li><a href="/en-US/docs/Mozilla/B2G_OS">B2G OS</a></li>
+              <li><a href="/en-US/docs/Persona">Persona</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="/en-US/docs/Tools">Developer Tools</a></li><li><a href="/en-US/docs/MDN/Feedback">Feedback<i aria-hidden="true" class="icon-caret-down"></i></a>
+
+        <div class="submenu js-submenu" id="nav-contact-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="/en-US/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a href="https://bugzilla.mozilla.org/form.doc">Report a content problem<i aria-hidden="true" class="icon-external-link"></i></a></li>
+              <li><a href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i aria-hidden="true" class="icon-external-link"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="/en-US/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li><li class="main-nav-search"><form action="/en-US/search" method="get" role="search">
+        <div class="search-wrap">
+          <label for="main-q" class="offscreen">Search</label>
+          <input type="search" id="main-q" name="q" placeholder="Search" data-value="array.map" value="" />
+          <span class="search-trigger"><i aria-hidden="true" class="icon-search"></i></span>&nbsp;
+          <button type="submit" class="offscreen">Search</button>
+        </div>
+      </form></li></ul></nav>
+  </div></header>
+
+  <!-- Content will go here -->
+  <main id="content"><div class="center clear">
+
+ <h1 class="offscreen">MDN Site Search</h1>
+ <h2 class="offscreen">Search</h2>
+  <form id="search-form" action="/en-US/search" method="get" class="search">
+    <div class="results-search-form search-form dark">
+      <label for="search-q" class="offscreen">Search</label>
+      <span class="search-icon">
+          <i class="icon-search" aria-hidden="true"></i>
+      </span>
+      <input class="search-input" type="search" name="q" id="search-q" placeholder="Search the docs" value="array.map"  />
+      <button type="submit" class="offscreen">Search</button>
+    </div>
+
+    <div class="column-container">
+      <!-- left results -->
+      <div class="column-main">
+
+        <div id="search-results-close-container">
+          <div class="search-pane search-results-explanation">
+            <h2>Results</h2>
+            <p>
+
+
+
+                    2046 documents found for "array.map" in English (US).
+
+
+
+
+
+                Showing results 1 to 10.
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+
+
+        <div class="search-pane search-results-container">
+          <h3><i aria-hidden="true" class="icon-copy"></i>Docs</h3>
+
+          <ul class="result-list">
+
+              <li class="result-1">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" tabindex="1">Array.prototype.map()</a></h4>
+        <p>The <mark>map</mark>() method creates a new <mark>array</mark> with the results of calling a provided function on every element…element in this <mark>array</mark>.</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+              <li class="result-2">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/map">TypedArray.prototype.map()</a></h4>
+        <p>this typed <mark>array</mark>. This method has the same algorithm as <mark>Array</mark>.prototype.<mark>map</mark>(). Typed<mark>Array</mark> is one of the…The <mark>map</mark>() method creates a new typed <mark>array</mark> with the results of calling a provided function on every element…the typed <mark>array</mark> types here.</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/map">developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/map</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+              <li class="result-3">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Glossary/array">Array</a></h4>
+        <p>An <mark>array</mark> is an ordered collection of data (either primitive or object). Based on its place in the array…access the corresponding value. In JavaScript, <mark>array</mark> s are also objects that can be manipulated with</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Glossary/array">developer.mozilla.org/en-US/docs/Glossary/array</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+              <li class="result-4">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from">Array.from()</a></h4>
+        <p>The <mark>Array</mark>.from() method creates a new <mark>Array</mark> instance from an <mark>array</mark>-like or iterable object.</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from">developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+              <li class="result-5">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from">TypedArray.from()</a></h4>
+        <p>The Typed<mark>Array</mark>.from() method creates a new typed <mark>array</mark> from an <mark>array</mark>-like or iterable object. This method…method is nearly the same as <mark>Array</mark>.from().</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from">developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+              <li class="result-6">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Array_comprehensions">Array comprehensions</a></h4>
+        <p>The <mark>array</mark> comprehension syntax is a JavaScript expression which allows you to quickly assemble a new…new <mark>array</mark> based on an existing one. Comprehensions exist in many programming languages.</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Array_comprehensions">developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Array_comprehensions</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+              <li class="result-7">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map">&lt;map&gt;</a></h4>
+        <p>The HTML <mark>map</mark> element is used with area elements to define an image <mark>map</mark> (a clickable link area).</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map">developer.mozilla.org/en-US/docs/Web/HTML/Element/map</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+              <li class="result-8">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of">for...of</a></h4>
+        <p>over iterable objects (including <mark>Array, Map</mark>, Set, String, Typed<mark>Array</mark>, arguments object and so on), invoking</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of">developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+              <li class="result-9">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map</a></h4>
+        <p>The <mark>Map</mark> object is a simple key/value <mark>map</mark>. Any value (both objects and primitive values) may be used as</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+              <li class="result-10">
+    <div class="column-container">
+      <div class="column-1"><i aria-hidden="true" class="icon-file-text-alt"></i></div>
+      <div class="column-5 result-list-item">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators">Iterators and generators</a></h4>
+        <p>iterating over a collection, from simple for loops to <mark>map</mark>() and filter(). Iterators and Generators bring the</p>
+        <p class="search-meta"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators">developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators</a>
+
+
+        </p>
+      </div>
+    </div>
+  </li>
+
+
+          </ul>
+
+          <div class="search-results-more">
+
+            <div class="pager">
+
+
+                <a class="button" href="https://developer.mozilla.org/en-US/search?page=2&amp;q=array.map&amp;topic=html&amp;topic=css&amp;topic=js&amp;topic=api" id="search-result-next">
+                Next
+                </a>
+
+              </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <!-- right filters -->
+      <div class="column-strip search-results-filters">
+        <fieldset>
+
+          <fieldset>
+            <legend><i aria-hidden="true" class="icon-th-list"></i><span class="offscreen">Filter by </span>Topics</legend>
+
+
+              <label class="checked">
+                <i aria-hidden="true" class="icon-check"></i>
+                <input type="checkbox" checked="checked" class="offscreen" name="topic" value="api">
+                <span class="filter-name">APIs and DOM</span>
+                <span class="offscreen">includes </span>
+                <span class="filter-count">1229
+                  <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="addons">
+                <span class="filter-name">Add-ons &amp; Extensions</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">179 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label class="checked">
+                <i aria-hidden="true" class="icon-check"></i>
+                <input type="checkbox" checked="checked" class="offscreen" name="topic" value="css">
+                <span class="filter-name">CSS</span>
+                <span class="offscreen">includes </span>
+                <span class="filter-count">89
+                  <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="canvas">
+                <span class="filter-name">Canvas</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">52 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="firefox">
+                <span class="filter-name">Firefox</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">62 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="firefox-os">
+                <span class="filter-name">Firefox OS</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">203 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label class="inactive">
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="firefox-mobile" disabled="disabled">Firefox for Android
+                <span class="offscreen"> includes</span>
+                <span class="filter-count">0
+                  <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label class="inactive">
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="firefox-desktop" disabled="disabled">Firefox for Desktop
+                <span class="offscreen"> includes</span>
+                <span class="filter-count">0
+                  <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="games">
+                <span class="filter-name">Games</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">59 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label class="checked">
+                <i aria-hidden="true" class="icon-check"></i>
+                <input type="checkbox" checked="checked" class="offscreen" name="topic" value="html">
+                <span class="filter-name">HTML</span>
+                <span class="offscreen">includes </span>
+                <span class="filter-count">199
+                  <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label class="checked">
+                <i aria-hidden="true" class="icon-check"></i>
+                <input type="checkbox" checked="checked" class="offscreen" name="topic" value="js">
+                <span class="filter-name">JavaScript</span>
+                <span class="offscreen">includes </span>
+                <span class="filter-count">577
+                  <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="marketplace">
+                <span class="filter-name">Marketplace</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">3 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="mathml">
+                <span class="filter-name">MathML</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">7 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="mobile">
+                <span class="filter-name">Mobile</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">39 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="apps">
+                <span class="filter-name">Open Web Apps</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">35 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="svg">
+                <span class="filter-name">SVG</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">123 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="webdev">
+                <span class="filter-name">Web Development</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">10 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="webgl">
+                <span class="filter-name">WebGL</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">291 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="docs">
+                <span class="filter-name">Writing Documentation</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">1 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="xpcom">
+                <span class="filter-name">XPCOM</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">181 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="topic" value="xul">
+                <span class="filter-name">XUL</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">45 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+          </fieldset>
+
+          <fieldset>
+            <legend><i aria-hidden="true" class="icon-th-list"></i><span class="offscreen">Filter by </span>Skill level</legend>
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="skill" value="beginner">
+                <span class="filter-name">I&#39;m Learning</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">75 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="skill" value="advanced">
+                <span class="filter-name">I&#39;m an Expert</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">24 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="skill" value="intermediate">
+                <span class="filter-name">Intermediate</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">27 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+          </fieldset>
+
+          <fieldset>
+            <legend><i aria-hidden="true" class="icon-th-list"></i><span class="offscreen">Filter by </span>Document type</legend>
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="type" value="code">
+                <span class="filter-name">Code Samples</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">25 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="type" value="howto">
+                <span class="filter-name">How-To &amp; Tutorial</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">156 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+
+              <label>
+                <i aria-hidden="true" class="icon-check-empty"></i>
+                <input type="checkbox" class="offscreen" name="type" value="tools">
+                <span class="filter-name">Tools</span>
+                <span class="offscreen">includes </span>
+                  <span class="filter-count">22 <span class="offscreen">documents</span>
+                </span>
+              </label>
+
+
+          </fieldset>
+
+          <input class="filter-button" type="submit" value="Filter" />
+
+      </fieldset>
+    </div>
+  </div>
+</form>
+
+  </div></main>
+
+  <!-- Footer -->
+  <footer><div class="center">
+    <div class="column-container">
+      <div class="column-main">
+
+        <div class="contentinfo">
+          <p>&copy; 2005-2016 Mozilla Developer Network and individual contributors.</p> <p>Content is available under <a href="/en-US/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+          <ul>
+            <li><a href="/docs/MDN/About">About MDN</a></li>
+            <li><a href="//www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+            <li><a href="//www.mozilla.org/privacy/websites/">Privacy</a></li>
+            <li><a href="//www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            <li><a href="//github.com/mozilla/kuma">Contribute to the code</a></li>
+          </ul>
+        </p>
+
+        </div>
+      </div>
+      <div class="column-strip">
+
+
+              <form class="languages go" method="get" action="#">
+  <label for="language">Other languages:</label>
+
+
+    <input type="hidden" name="q" value="array.map">
+
+
+
+    <input type="hidden" name="topic" value="api">
+
+
+  <select id="language" class="autosubmit" name="lang">
+    <option value="af">
+        Afrikaans
+      </option><option value="ar">
+        عربي
+      </option><option value="az">
+        Azərbaycanca
+      </option><option value="bm">
+        Bamanankan
+      </option><option value="bn-BD">
+        বাংলা (বাংলাদেশ)
+      </option><option value="bn-IN">
+        বাংলা (ভারত)
+      </option><option value="ca">
+        Català
+      </option><option value="cs">
+        Čeština
+      </option><option value="de">
+        Deutsch
+      </option><option value="ee">
+        Eʋe
+      </option><option value="el">
+        Ελληνικά
+      </option><option value="en-US" selected>
+        English (US)
+      </option><option value="es">
+        Español
+      </option><option value="fa">
+        فارسی
+      </option><option value="ff">
+        Pulaar-Fulfulde
+      </option><option value="fi">
+        suomi
+      </option><option value="fr">
+        Français
+      </option><option value="fy-NL">
+        Frysk
+      </option><option value="ga-IE">
+        Gaeilge
+      </option><option value="ha">
+        Hausa
+      </option><option value="he">
+        עברית
+      </option><option value="hi-IN">
+        हिन्दी (भारत)
+      </option><option value="hr">
+        Hrvatski
+      </option><option value="hu">
+        magyar
+      </option><option value="id">
+        Bahasa Indonesia
+      </option><option value="ig">
+        Igbo
+      </option><option value="it">
+        Italiano
+      </option><option value="ja">
+        日本語
+      </option><option value="ka">
+        ქართული
+      </option><option value="ko">
+        한국어
+      </option><option value="ln">
+        Lingála
+      </option><option value="mg">
+        Malagasy
+      </option><option value="ml">
+        മലയാളം
+      </option><option value="ms">
+        Melayu
+      </option><option value="my">
+        မြန်မာဘာသာ
+      </option><option value="nl">
+        Nederlands
+      </option><option value="pl">
+        Polski
+      </option><option value="pt-BR">
+        Português (do Brasil)
+      </option><option value="pt-PT">
+        Português (Europeu)
+      </option><option value="ro">
+        Română
+      </option><option value="ru">
+        Русский
+      </option><option value="son">
+        Soŋay
+      </option><option value="sq">
+        Shqip
+      </option><option value="sr">
+        Српски
+      </option><option value="sr-Latn">
+        Srpski
+      </option><option value="sv-SE">
+        Svenska
+      </option><option value="sw">
+        Kiswahili
+      </option><option value="ta">
+        தமிழ்
+      </option><option value="th">
+        ไทย
+      </option><option value="tl">
+        Tagalog
+      </option><option value="tn">
+        Setswana
+      </option><option value="tr">
+        Türkçe
+      </option><option value="uk">
+        Українська
+      </option><option value="vi">
+        Tiếng Việt
+      </option><option value="wo">
+        Wolof
+      </option><option value="xh">
+        isiXhosa
+      </option><option value="yo">
+        Yorùbá
+      </option><option value="zh-CN">
+        中文 (简体)
+      </option><option value="zh-TW">
+        正體中文 (繁體)
+      </option><option value="zu">
+        isiZulu
+      </option>
+  </select>
+  <noscript><button type="submit">Go</button></noscript>
+</form>
+
+
+      </div>
+    </div>
+  </div></footer>
+
+  <!-- site js -->
+
+
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
+
+    <form id="_persona_login" method="post" action="/users/persona/signin" data-csrf-token-url="/users/persona/csrf" data-request='{"siteName": "Mozilla Developer Network", "siteLogo": "/static/img/opengraph-logo.png"}' data-persona-script="https://login.persona.org/include.js">
+  <input type="hidden" name="csrfmiddlewaretoken" value="" id="_persona_csrf_token" />
+  <input type="hidden" name="next" value="" id="_persona_next_url"/>
+  <input type="hidden" name="process" value="" id="_persona_process"/>
+  <input type="hidden" name="assertion" id="_persona_assertion"/>
+</form>
+
+
+    <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/main.a7b27a25fb9c.js" charset="utf-8"></script>
+
+      <script>
+        if(window.mdn && mdn.analytics) mdn.analytics.trackOutboundLinks();
+      </script>
+
+
+    <script type="text/javascript" src="https://developer.cdn.mozilla.net/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+
+    <script async type="text/javascript" src="https://developer.cdn.mozilla.net/static/build/js/search.4e2f7dabeddc.js" charset="utf-8"></script>
+
+
+
+
+
+
+</body>
+</html>
+
